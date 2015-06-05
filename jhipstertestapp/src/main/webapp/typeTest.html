@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
+Version: 3.6.1
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js" data-ng-app="MetronicApp"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js" data-ng-app="MetronicApp"> <![endif]-->
+<!--[if !IE]><!-->
+<html data-ng-app="webappApp" lang="ja">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+    <head>
+  
+    </head>
+		<!-- END HEAD -->
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-sidebar-closed-hide-logo page-on-load" ng-app="webappApp" ng-class="{'page-sidebar-closed': settings.layout.pageSidebarClosed}" ng-controller="AppController">
+        <!-- BEGIN PAGE SPINNER -->
+	    <div class="page-spinner-bar" ng-spinner-bar="">
+	        <div class="bounce1"></div>
+	        <div class="bounce2"></div>
+	        <div class="bounce3"></div>
+	    </div>
+	    <!-- END PAGE SPINNER -->
+
+	    <!-- BEGIN HEADER -->
+	    <div class="page-header navbar navbar-fixed-top" ui-view="header">
+	    </div>
+	    <!-- END HEADER -->
+
+	    <div class="clearfix">
+	    </div>
+
+	    <!-- BEGIN CONTAINER -->
+	    <div class="page-container">
+	        <!-- BEGIN SIDEBAR -->
+	        <div class="page-sidebar-wrapper" ui-view="sidebar">
+	        </div>
+	        <!-- END SIDEBAR -->
+	        <div class="page-content-wrapper">
+	            <div class="page-content">
+	                <!-- BEGIN PAGE HEAD -->
+	                <div class="page-head" ui-view="pagehead">
+	                </div>
+
+	                <!-- END PAGE HEAD -->
+	                <!-- BEGIN ACTUAL CONTENT -->
+                    <div class="fade-in-up" ui-view="content">
+	                </div>
+	                <!-- END ACTUAL CONTENT -->
+	            </div>
+	        </div>
+	    </div>
+	    <!-- END CONTAINER -->
+
+	    <!-- BEGIN FOOTER -->
+	    <div class="page-footer" ui-view="footer">
+	    </div>
+	    <!-- END FOOTER -->
+
+
+        <!--[if lt IE 10]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--<div ng-show="{{ENV === 'dev'}}" class="development" ng-cloak=""></div>
+        <div ui-view="navbar" ng-cloak=""></div>
+        <div class="container">
+            <div class="well" ui-view="content"></div>
+
+            <div class="footer">
+                <p translate="footer">This is your footer</p>
+            </div>
+        </div>-->
+
+        <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=鷬 Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+
+                <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/json3/lib/json3.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+        <script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+        <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+        <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+        <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+        <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/angular-busy/dist/angular-busy.js"></script>
+        <script src="bower_components/ng-fab-form/dist/ng-fab-form.js"></script>
+        <script src="bower_components/kendo-ui/src/js/kendo.all.js"></script>
+        <script src="bower_components/metronic/src/global/scripts/metronic.js"></script>
+        <script src="bower_components/jquery-migrate/jquery-migrate.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <script src="bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+        <script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="bower_components/blockui/jquery.blockUI.js"></script>
+        <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+        <script src="bower_components/jquery.uniform/jquery.uniform.js"></script>
+        <script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+        <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-file-upload/angular-file-upload.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+
+	    <script type="text/javascript">
+        /* Init Metronic's core jquery plugins and layout scripts */
+        $(document).ready(function() {
+            Metronic.init(); // Run metronic theme
+            Metronic.setAssetsPath('assets/metronic'); // Set the assets folder path
+            //Layout.init(); // init current layout
+            //Demo.init(); // init demo features
+        });
+    	</script>
+    	<!-- END JAVASCRIPTS -->
+
+        <!-- build:js({.tmp,src/main/webapp}) scripts/demo.js -->
+
+        
+        
+        <!--◆ demo -->
+        <script src="scripts/app/app.js"></script>
+        <script src="scripts/app/app.constants.js"></script>
+
+        <script src="scripts/app/demo/demo.js"></script>
+        <script src="scripts/app/demo/typescript.js"></script>
+        
+        <!-- metronic -->
+        <script src="scripts/components/layout.js"></script>
+        <script src="scripts/components/metronic.directives.js"></script>
+        <!-- END APP LEVEL JQUERY SCRIPTS -->
+        
+        
+        <script src="scripts/components/demo/header/header.controller.js"></script>
+        <script src="scripts/components/demo/footer/footer.controller.js"></script>
+        <script src="scripts/components/demo/sidebar/sidebar.controller.js"></script>
+        <script src="scripts/components/demo/pagehead/pagehead.controller.js"></script>
+        <script src="scripts/components/demo/divisionselect/divisionselect.controller.js"></script>
+
+        <!-- 管理者／顧客 -->
+        <script src="scripts/app/demo/customer/customer.controller.js"></script>
+        <script src="scripts/app/demo/customer/customer.detail.controller.js"></script>
+        <script src="scripts/app/demo/customer/customer.detail.basic.controller.js"></script>
+        <script src="scripts/app/demo/customer/customer.js"></script>
+        <script src="scripts/app/demo/customer/customer.demopages.js"></script>
+
+        <!-- 管理者／注文 -->
+        <script src="scripts/app/demo/sample/order_manager/order_manager.js"></script>
+        <script src="scripts/app/demo/sample/order_manager/order_manager.detail.controller.js"></script>
+
+        <!-- 管理者／ファイル -->
+        <script src="scripts/app/demo/sample/file/file.js"></script>
+        <script src="scripts/app/demo/sample/file/file.send.controller.js"></script>
+
+        <!-- 顧客／トップ -->
+        <script src="scripts/app/demo/info/info.controller.js"></script>
+        <script src="scripts/app/demo/info/info.js"></script>
+
+        <!-- 顧客／料金 -->
+        <script src="scripts/app/demo/fee/fee.js"></script>
+
+        <!-- 顧客／料金／回線毎料金 -->
+        <script src="scripts/app/demo/fee/charge/charge.js"></script>
+        <script src="scripts/app/demo/fee/charge/charge.controller.js"></script>
+        <script src="scripts/app/demo/fee/charge/charge.detail.controller.js"></script>
+        <script src="scripts/app/demo/fee/charge/charge.info.controller.js"></script>
+
+        <!-- 顧客／分析 -->
+        <script src="scripts/app/demo/analysis/analysis.js"></script>
+
+        <!-- 顧客／分析／月次分析 -->
+        <script src="scripts/app/demo/analysis/monthlytransition/monthlytransition.js"></script>
+        <script src="scripts/app/demo/analysis/monthlytransition/monthlytransition.controller.js"></script>
+
+        <!-- 顧客／分析／(サンプル)部門毎利用状況 -->
+        <script src="scripts/app/demo/sample/analysisdivision.js"></script>
+        <script src="scripts/app/demo/sample/analysisdivision.controller.js"></script>
+
+        <!-- 顧客／部門・回線 -->
+        <script src="scripts/app/demo/device/device.js"></script>
+
+        <!-- 顧客／部門・回線／部門管理 -->
+        <script src="scripts/app/demo/device/division/division.js"></script>
+        <script src="scripts/app/demo/device/division/division.controller.js"></script>
+        <script src="scripts/app/demo/device/division/division.detail.controller.js"></script>
+
+
+        <!-- 顧客／Ｑ＆Ａ -->
+        <script src="scripts/app/demo/faq/faq.js"></script>
+        <script src="scripts/app/demo/faq/faq.controller.js"></script>
+
+        <!-- 顧客／会社情報 -->
+        <script src="scripts/app/demo/companyinfo/comnanyinfo.js"></script>
+        <script src="scripts/app/demo/companyinfo/basic/basic.js"></script>
+        <script src="scripts/app/demo/companyinfo/carrierbilling/carrierbilling.js"></script>
+
+
+
+        <script src="scripts/app/demo/main/main.js"></script>
+        <script src="scripts/app/demo/main/main.controller.js"></script>
+
+        <script src="scripts/components/language/language.service.js"></script>
+        <script src="scripts/components/language/language.controller.js"></script>
+        <script src="scripts/components/util/truncate.filter.js"></script>
+        <script src="scripts/components/util/base64.service.js"></script>
+
+        <script src="scripts/app/error/error.js"></script>
+
+        <script src="scripts/app/manager/account/sessions/sessions.controller.js"></script>
+
+        <script src="scripts/components/util/http.interceptor.js"></script>
+
+        <!-- endbuild -->
+
+
+
+</body></html>
